@@ -43,22 +43,25 @@ async function main() {
                     $("#green").css("background-color", "green");
                     break;
                 case "r":
-                    $("#red").animate({color: "white"}, 500)
+                    $("#red").css("background-color", "white");
                     console.log("I'm still looping...")
-                    await new Promise(r => setTimeout(r, 100));
-                    // $("#red").animate({color: "red"}, 500)
+                    await new Promise(r => setTimeout(r, 500));
+                    new Audio('sounds/red.mp3').play();
+                    $("#red").css("background-color", "red");
                     break;
                 case "y":
-                    $("#yellow").animate({color: "white"}, 500)
+                    $("#yellow").css("background-color", "white");
                     console.log("I'm still looping...")
-                    await new Promise(r => setTimeout(r, 100));
-                    // $("#yellow").animate({color: "yellow"}, 500)
+                    await new Promise(r => setTimeout(r, 500));
+                    new Audio('sounds/yellow.mp3').play();
+                    $("#yellow").css("background-color", "yellow");
                     break;
                 case "b":
-                    $("#blue").animate({color: "white"}, 500)
+                    $("#blue").css("background-color", "white");
                     console.log("I'm still looping...")
-                    await new Promise(r => setTimeout(r, 100));
-                    // $("#blue").animate({color: "blue"}, 500)
+                    await new Promise(r => setTimeout(r, 500));
+                    new Audio('sounds/blue.mp3').play();
+                    $("#blue").css("background-color", "blue");
                     break;
                 default:
                     break;
@@ -85,3 +88,7 @@ async function main() {
     }
 }
 main();
+
+// I'm currently facing the problem of figuring out how to wait for a bit 
+// while the user inputs with button presses.
+// going to think for a bit then come back.
