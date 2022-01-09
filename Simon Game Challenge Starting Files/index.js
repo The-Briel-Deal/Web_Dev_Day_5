@@ -10,3 +10,4 @@ for (var index = 0; index < colors_of_buttons.length; index ++) {
         $(this).animate({opacity: "1"}, 150)
     });
 }
+
